@@ -46,11 +46,11 @@ class PostController extends Controller
 	}
 
 	function isPostAuthor() {
-        $post = Post::model()->findByPk($_GET['id']);
-        $author_id = $post->author->id;
-        if(Yii::app()->user->id === $author_id)
-            return true;
-        return false;
+	        $post = Post::model()->findByPk($_GET['id']);
+	        $author_id = $post->author->id;
+	        if(Yii::app()->user->id === $author_id)
+	            return true;
+	        return false;
 	}
 
 	/**
