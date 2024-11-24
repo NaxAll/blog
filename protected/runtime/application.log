@@ -1,0 +1,1790 @@
+2024/11/24 19:00:48 [error] [exception.CDbException] could not find driver
+2024/11/24 19:00:48 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in /var/www/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /var/www/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/framework/db/ar/CActiveRecord.php(1604): CActiveRecord->getCommandBuilder()
+#7 /var/www/framework/web/CActiveDataProvider.php(228): CActiveRecord->count()
+#8 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /var/www/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/framework/web/CBaseController.php(181): CBaseController->createWidget()
+#15 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#16 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#17 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#18 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#19 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#20 /var/www/demos/blog/protected/controllers/PostController.php(135): CController->render()
+#21 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#22 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#23 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#24 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#26 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#27 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#30 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#31 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#32 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /var/www/demos/blog/index.php(11): CApplication->run()
+#34 {main}
+REQUEST_URI=/
+---
+2024/11/24 19:00:51 [error] [exception.CDbException] could not find driver
+2024/11/24 19:00:51 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in /var/www/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /var/www/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/framework/db/ar/CActiveRecord.php(1604): CActiveRecord->getCommandBuilder()
+#7 /var/www/framework/web/CActiveDataProvider.php(228): CActiveRecord->count()
+#8 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /var/www/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/framework/web/CBaseController.php(181): CBaseController->createWidget()
+#15 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#16 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#17 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#18 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#19 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#20 /var/www/demos/blog/protected/controllers/PostController.php(135): CController->render()
+#21 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#22 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#23 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#24 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#26 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#27 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#30 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#31 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#32 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /var/www/demos/blog/index.php(11): CApplication->run()
+#34 {main}
+REQUEST_URI=/
+---
+2024/11/24 19:00:52 [error] [exception.CDbException] could not find driver
+2024/11/24 19:00:52 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in /var/www/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /var/www/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/framework/db/ar/CActiveRecord.php(1604): CActiveRecord->getCommandBuilder()
+#7 /var/www/framework/web/CActiveDataProvider.php(228): CActiveRecord->count()
+#8 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /var/www/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/framework/web/CBaseController.php(181): CBaseController->createWidget()
+#15 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#16 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#17 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#18 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#19 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#20 /var/www/demos/blog/protected/controllers/PostController.php(135): CController->render()
+#21 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#22 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#23 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#24 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#26 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#27 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#30 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#31 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#32 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /var/www/demos/blog/index.php(11): CApplication->run()
+#34 {main}
+REQUEST_URI=/
+---
+2024/11/24 19:00:53 [error] [exception.CDbException] could not find driver
+2024/11/24 19:00:53 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection. in /var/www/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /var/www/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /var/www/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/framework/base/CApplication.php(459): CModule->getComponent()
+#4 /var/www/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#5 /var/www/framework/db/ar/CActiveRecord.php(672): CActiveRecord->getDbConnection()
+#6 /var/www/framework/db/ar/CActiveRecord.php(1604): CActiveRecord->getCommandBuilder()
+#7 /var/www/framework/web/CActiveDataProvider.php(228): CActiveRecord->count()
+#8 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /var/www/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/framework/web/CBaseController.php(181): CBaseController->createWidget()
+#15 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#16 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#17 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#18 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#19 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#20 /var/www/demos/blog/protected/controllers/PostController.php(135): CController->render()
+#21 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#22 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#23 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#24 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#26 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#27 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#30 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#31 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#32 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /var/www/demos/blog/index.php(11): CApplication->run()
+#34 {main}
+REQUEST_URI=/
+---
+2024/11/24 19:26:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.tbl_post' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_post`.
+2024/11/24 19:26:00 [error] [exception.CDbException] CDbException: The table "{{post}}" for active record class "Post" cannot be found in the database. in /var/www/framework/db/ar/CActiveRecord.php:2391
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(413): CActiveRecordMetaData->__construct()
+#1 /var/www/framework/db/ar/CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 /var/www/framework/db/ar/CActiveFinder.php(393): CActiveRecord->getTableSchema()
+#3 /var/www/framework/db/ar/CActiveFinder.php(47): CJoinElement->__construct()
+#4 /var/www/framework/db/ar/CActiveRecord.php(915): CActiveFinder->__construct()
+#5 /var/www/framework/db/ar/CActiveRecord.php(1612): CActiveRecord->getActiveFinder()
+#6 /var/www/framework/web/CActiveDataProvider.php(228): CActiveRecord->count()
+#7 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#8 /var/www/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#9 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#10 /var/www/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#11 /var/www/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#12 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#13 /var/www/framework/web/CBaseController.php(181): CBaseController->createWidget()
+#14 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#15 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#16 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#17 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#18 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#19 /var/www/demos/blog/protected/controllers/PostController.php(135): CController->render()
+#20 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#21 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#22 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#23 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#25 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#26 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#27 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#29 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#30 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#31 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#32 /var/www/demos/blog/index.php(11): CApplication->run()
+#33 {main}
+REQUEST_URI=/
+---
+2024/11/24 19:53:13 [error] [php] include(Comment.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:463)
+Stack trace:
+#0 /var/www/framework/YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 /var/www/demos/blog/protected/models/Post.php(65): spl_autoload_call()
+#3 /var/www/framework/db/ar/CActiveRecord.php(2417): Post->relations()
+#4 /var/www/framework/db/ar/CActiveRecord.php(413): CActiveRecordMetaData->__construct()
+#5 /var/www/framework/db/ar/CActiveRecord.php(663): Post->getMetaData()
+#6 /var/www/framework/db/ar/CActiveFinder.php(393): Post->getTableSchema()
+#7 /var/www/framework/db/ar/CActiveFinder.php(47): CJoinElement->__construct()
+#8 /var/www/framework/db/ar/CActiveRecord.php(915): CActiveFinder->__construct()
+#9 /var/www/framework/db/ar/CActiveRecord.php(1612): Post->getActiveFinder()
+#10 /var/www/framework/web/CActiveDataProvider.php(228): Post->count()
+#11 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#12 /var/www/framework/web/CActiveDataProvider.php(178): CActiveDataProvider->getTotalItemCount()
+#13 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#14 /var/www/framework/zii/widgets/CBaseListView.php(125): CActiveDataProvider->getData()
+#15 /var/www/framework/zii/widgets/CListView.php(211): CListView->init()
+#16 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#17 /var/www/framework/web/CBaseController.php(181): PostController->createWidget()
+#18 /var/www/demos/blog/protected/views/post/index.php(8): PostController->widget()
+#19 /var/www/framework/web/CBaseController.php(126): require()
+#20 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#21 /var/www/framework/web/CController.php(872): PostController->renderFile()
+#22 /var/www/framework/web/CController.php(785): PostController->renderPartial()
+#23 /var/www/demos/blog/protected/controllers/PostController.php(135): PostController->render()
+#24 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#25 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#26 /var/www/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#27 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#28 /var/www/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#29 /var/www/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#30 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#31 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#32 /var/www/framework/web/CController.php(265): PostController->runActionWithFilters()
+#33 /var/www/framework/web/CWebApplication.php(282): PostController->run()
+#34 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#35 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#36 /var/www/demos/blog/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/post/index
+2024/11/24 19:54:58 [error] [php] include(Comment.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:463)
+Stack trace:
+#0 /var/www/framework/YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 /var/www/demos/blog/protected/models/Post.php(65): spl_autoload_call()
+#3 /var/www/framework/db/ar/CActiveRecord.php(2417): Post->relations()
+#4 /var/www/framework/db/ar/CActiveRecord.php(413): CActiveRecordMetaData->__construct()
+#5 /var/www/framework/db/ar/CActiveRecord.php(663): Post->getMetaData()
+#6 /var/www/framework/db/ar/CActiveRecord.php(1609): Post->getTableSchema()
+#7 /var/www/framework/web/CActiveDataProvider.php(228): Post->count()
+#8 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/framework/web/CActiveDataProvider.php(178): CActiveDataProvider->getTotalItemCount()
+#10 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/framework/zii/widgets/CBaseListView.php(125): CActiveDataProvider->getData()
+#12 /var/www/framework/zii/widgets/CListView.php(211): CListView->init()
+#13 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/framework/web/CBaseController.php(181): PostController->createWidget()
+#15 /var/www/demos/blog/protected/views/post/index.php(8): PostController->widget()
+#16 /var/www/framework/web/CBaseController.php(126): require()
+#17 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#18 /var/www/framework/web/CController.php(872): PostController->renderFile()
+#19 /var/www/framework/web/CController.php(785): PostController->renderPartial()
+#20 /var/www/demos/blog/protected/controllers/PostController.php(129): PostController->render()
+#21 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#22 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#23 /var/www/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#24 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#26 /var/www/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#27 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/framework/web/CController.php(265): PostController->runActionWithFilters()
+#30 /var/www/framework/web/CWebApplication.php(282): PostController->run()
+#31 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#32 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /var/www/demos/blog/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/post/index
+2024/11/24 19:54:59 [error] [php] include(Comment.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:463)
+Stack trace:
+#0 /var/www/framework/YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 /var/www/demos/blog/protected/models/Post.php(65): spl_autoload_call()
+#3 /var/www/framework/db/ar/CActiveRecord.php(2417): Post->relations()
+#4 /var/www/framework/db/ar/CActiveRecord.php(413): CActiveRecordMetaData->__construct()
+#5 /var/www/framework/db/ar/CActiveRecord.php(663): Post->getMetaData()
+#6 /var/www/framework/db/ar/CActiveRecord.php(1609): Post->getTableSchema()
+#7 /var/www/framework/web/CActiveDataProvider.php(228): Post->count()
+#8 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/framework/web/CActiveDataProvider.php(178): CActiveDataProvider->getTotalItemCount()
+#10 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/framework/zii/widgets/CBaseListView.php(125): CActiveDataProvider->getData()
+#12 /var/www/framework/zii/widgets/CListView.php(211): CListView->init()
+#13 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/framework/web/CBaseController.php(181): PostController->createWidget()
+#15 /var/www/demos/blog/protected/views/post/index.php(8): PostController->widget()
+#16 /var/www/framework/web/CBaseController.php(126): require()
+#17 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#18 /var/www/framework/web/CController.php(872): PostController->renderFile()
+#19 /var/www/framework/web/CController.php(785): PostController->renderPartial()
+#20 /var/www/demos/blog/protected/controllers/PostController.php(129): PostController->render()
+#21 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#22 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#23 /var/www/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#24 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#26 /var/www/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#27 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/framework/web/CController.php(265): PostController->runActionWithFilters()
+#30 /var/www/framework/web/CWebApplication.php(282): PostController->run()
+#31 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#32 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /var/www/demos/blog/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/post/index
+2024/11/24 19:55:00 [error] [php] include(Comment.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:463)
+Stack trace:
+#0 /var/www/framework/YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 /var/www/demos/blog/protected/models/Post.php(65): spl_autoload_call()
+#3 /var/www/framework/db/ar/CActiveRecord.php(2417): Post->relations()
+#4 /var/www/framework/db/ar/CActiveRecord.php(413): CActiveRecordMetaData->__construct()
+#5 /var/www/framework/db/ar/CActiveRecord.php(663): Post->getMetaData()
+#6 /var/www/framework/db/ar/CActiveRecord.php(1609): Post->getTableSchema()
+#7 /var/www/framework/web/CActiveDataProvider.php(228): Post->count()
+#8 /var/www/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /var/www/framework/web/CActiveDataProvider.php(178): CActiveDataProvider->getTotalItemCount()
+#10 /var/www/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /var/www/framework/zii/widgets/CBaseListView.php(125): CActiveDataProvider->getData()
+#12 /var/www/framework/zii/widgets/CListView.php(211): CListView->init()
+#13 /var/www/framework/web/CBaseController.php(147): CListView->init()
+#14 /var/www/framework/web/CBaseController.php(181): PostController->createWidget()
+#15 /var/www/demos/blog/protected/views/post/index.php(8): PostController->widget()
+#16 /var/www/framework/web/CBaseController.php(126): require()
+#17 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#18 /var/www/framework/web/CController.php(872): PostController->renderFile()
+#19 /var/www/framework/web/CController.php(785): PostController->renderPartial()
+#20 /var/www/demos/blog/protected/controllers/PostController.php(129): PostController->render()
+#21 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#22 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#23 /var/www/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#24 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#26 /var/www/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#27 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/framework/web/CController.php(265): PostController->runActionWithFilters()
+#30 /var/www/framework/web/CWebApplication.php(282): PostController->run()
+#31 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#32 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /var/www/demos/blog/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/post/index
+2024/11/24 19:56:28 [error] [php] include(Tag.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:463)
+Stack trace:
+#0 /var/www/framework/YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 /var/www/demos/blog/protected/models/Post.php(102): spl_autoload_call()
+#3 /var/www/framework/base/CComponent.php(111): Post->getTagLinks()
+#4 /var/www/framework/db/ar/CActiveRecord.php(145): Post->__get()
+#5 /var/www/demos/blog/protected/views/post/_view.php(17): Post->__get()
+#6 /var/www/framework/web/CBaseController.php(130): require()
+#7 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#8 /var/www/framework/zii/widgets/CListView.php(291): PostController->renderFile()
+#9 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#12 /var/www/framework/zii/widgets/CBaseListView.php(149): CListView->renderContent()
+#13 /var/www/framework/web/CBaseController.php(182): CListView->run()
+#14 /var/www/demos/blog/protected/views/post/index.php(8): PostController->widget()
+#15 /var/www/framework/web/CBaseController.php(126): require()
+#16 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#17 /var/www/framework/web/CController.php(872): PostController->renderFile()
+#18 /var/www/framework/web/CController.php(785): PostController->renderPartial()
+#19 /var/www/demos/blog/protected/controllers/PostController.php(129): PostController->render()
+#20 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#21 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#22 /var/www/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#23 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#25 /var/www/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#26 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#27 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/framework/web/CController.php(265): PostController->runActionWithFilters()
+#29 /var/www/framework/web/CWebApplication.php(282): PostController->run()
+#30 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#31 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#32 /var/www/demos/blog/index.php(11): CWebApplication->run()
+REQUEST_URI=/index.php/post/index
+2024/11/24 19:57:33 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 19:57:50 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 19:57:51 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 19:59:08 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 19:59:10 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 19:59:35 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 19:59:36 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 20:00:07 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 20:00:08 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 20:00:09 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 20:00:09 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 20:00:11 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+---
+2024/11/24 20:00:16 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/site/page?view=about
+---
+2024/11/24 20:00:29 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(8): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/index
+---
+2024/11/24 20:02:33 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(4): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/index
+---
+2024/11/24 20:02:34 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(4): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/index
+---
+2024/11/24 20:03:37 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(4): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/index
+---
+2024/11/24 20:03:38 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(4): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/index
+---
+2024/11/24 20:03:55 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(4): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/index
+---
+2024/11/24 20:03:58 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(4): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/
+---
+2024/11/24 20:04:58 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(4): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/
+---
+2024/11/24 20:04:59 [error] [exception.CException] CException: Property "Post.tagLinks" is not defined. in /var/www/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/framework/db/ar/CActiveRecord.php(145): CComponent->__get()
+#1 /var/www/demos/blog/protected/views/post/_view.php(17): CActiveRecord->__get()
+#2 /var/www/framework/web/CBaseController.php(130): require('/var/www/demos/...')
+#3 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#4 /var/www/framework/zii/widgets/CListView.php(291): CBaseController->renderFile()
+#5 /var/www/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection()
+#7 /var/www/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#8 /var/www/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /var/www/demos/blog/protected/views/post/index.php(4): CBaseController->widget()
+#11 /var/www/framework/web/CBaseController.php(126): require('/var/www/demos/...')
+#12 /var/www/framework/web/CBaseController.php(95): CBaseController->renderInternal()
+#13 /var/www/framework/web/CController.php(872): CBaseController->renderFile()
+#14 /var/www/framework/web/CController.php(785): CController->renderPartial()
+#15 /var/www/demos/blog/protected/controllers/PostController.php(129): CController->render()
+#16 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#17 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /var/www/framework/web/filters/CFilterChain.php(134): CController->runAction()
+#19 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#21 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#22 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#23 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#25 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#26 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /var/www/demos/blog/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/
+---
+2024/11/24 20:06:11 [error] [php] include(Comment.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:463)
+Stack trace:
+#0 /var/www/framework/YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 /var/www/demos/blog/protected/components/views/userMenu.php(4): spl_autoload_call()
+#3 /var/www/framework/web/CBaseController.php(130): require()
+#4 /var/www/framework/web/CBaseController.php(95): UserMenu->renderInternal()
+#5 /var/www/framework/web/widgets/CWidget.php(244): UserMenu->renderFile()
+#6 /var/www/demos/blog/protected/components/UserMenu.php(15): UserMenu->render()
+#7 /var/www/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#8 /var/www/framework/web/CBaseController.php(182): UserMenu->run()
+#9 /var/www/demos/blog/protected/views/layouts/column2.php(10): PostController->widget()
+#10 /var/www/framework/web/CBaseController.php(126): require()
+#11 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#12 /var/www/framework/web/CController.php(787): PostController->renderFile()
+#13 /var/www/demos/blog/protected/controllers/PostController.php(129): PostController->render()
+#14 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#16 /var/www/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#17 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#19 /var/www/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#20 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/framework/web/CController.php(265): PostController->runActionWithFilters()
+#23 /var/www/framework/web/CWebApplication.php(282): PostController->run()
+#24 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#25 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /var/www/demos/blog/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2024/11/24 20:09:38 [error] [php] include(Tag.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:463)
+Stack trace:
+#0 /var/www/framework/YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 /var/www/demos/blog/protected/components/TagCloud.php(12): spl_autoload_call()
+#3 /var/www/framework/zii/widgets/CPortlet.php(97): TagCloud->renderContent()
+#4 /var/www/framework/web/CBaseController.php(182): TagCloud->run()
+#5 /var/www/demos/blog/protected/views/layouts/column2.php(13): PostController->widget()
+#6 /var/www/framework/web/CBaseController.php(126): require()
+#7 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#8 /var/www/framework/web/CController.php(787): PostController->renderFile()
+#9 /var/www/demos/blog/protected/controllers/PostController.php(129): PostController->render()
+#10 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#11 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#13 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#15 /var/www/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#16 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/framework/web/CController.php(265): PostController->runActionWithFilters()
+#19 /var/www/framework/web/CWebApplication.php(282): PostController->run()
+#20 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /var/www/demos/blog/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2024/11/24 20:11:21 [error] [php] include(TagCloud.php): failed to open stream: No such file or directory (/var/www/framework/YiiBase.php:463)
+Stack trace:
+#0 /var/www/framework/YiiBase.php(463): include()
+#1 unknown(0): autoload()
+#2 unknown(0): spl_autoload_call()
+#3 /var/www/framework/YiiBase.php(310): class_exists()
+#4 /var/www/framework/web/CWidgetFactory.php(146): import()
+#5 /var/www/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#6 /var/www/framework/web/CBaseController.php(181): PostController->createWidget()
+#7 /var/www/demos/blog/protected/views/layouts/column2.php(13): PostController->widget()
+#8 /var/www/framework/web/CBaseController.php(126): require()
+#9 /var/www/framework/web/CBaseController.php(95): PostController->renderInternal()
+#10 /var/www/framework/web/CController.php(787): PostController->renderFile()
+#11 /var/www/demos/blog/protected/controllers/PostController.php(129): PostController->render()
+#12 /var/www/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#13 /var/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /var/www/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#15 /var/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#17 /var/www/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#18 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#19 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/framework/web/CController.php(265): PostController->runActionWithFilters()
+#21 /var/www/framework/web/CWebApplication.php(282): PostController->run()
+#22 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /var/www/demos/blog/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2024/11/24 20:47:33 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/admin
+HTTP_REFERER=http://localhost/index.php/post/index
+---
+2024/11/24 20:47:38 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 20:47:43 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/admin
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 20:48:41 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/admin
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 20:48:43 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/admin
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 20:48:43 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/admin
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 20:49:37 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/admin
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 20:49:38 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 20:49:39 [error] [exception.CException] CException: Property "CAccessRule.action" is not defined. in /var/www/framework/base/CComponent.php:172
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(115): CComponent->__set()
+#1 /var/www/framework/web/CController.php(1147): CAccessControlFilter->setRules()
+#2 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#3 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#6 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#7 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /var/www/demos/blog/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/post/index
+HTTP_REFERER=http://localhost/index.php/post/index
+---
+2024/11/24 21:30:28 [error] [exception.ParseError] ParseError: syntax error, unexpected ',', expecting ';' in /var/www/demos/blog/protected/controllers/PostController.php:35
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#1 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#2 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /var/www/demos/blog/index.php(11): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php/post/admin
+HTTP_REFERER=http://localhost/index.php/post/3/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9+%D0%BF%D0%BE%D1%81%D1%82
+---
+2024/11/24 21:31:59 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/admin
+HTTP_REFERER=http://localhost/index.php/post/3/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9+%D0%BF%D0%BE%D1%81%D1%82
+---
+2024/11/24 21:32:55 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:33:01 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/delete?ajax=yw0&id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:33:18 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:33:30 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:33:35 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:33:43 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=1
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:37:32 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:37:35 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=1
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:38:47 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=1
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:38:51 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:38:53 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=2
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:38:56 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=1
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:39:12 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=1
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:39:15 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:39:22 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:44:03 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:44:03 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:44:13 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=3
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:44:18 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=1
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:44:21 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=2
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 21:44:24 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/delete?ajax=yw0&id=2
+HTTP_REFERER=http://localhost/index.php/post/admin
+---
+2024/11/24 22:04:50 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "2". in /var/www/framework/web/CController.php:486
+Stack trace:
+#0 /var/www/framework/web/CController.php(270): CController->missingAction()
+#1 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#2 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/demos/blog/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/post/2
+---
+2024/11/24 22:05:02 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /var/www/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /var/www/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied()
+#1 /var/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#2 /var/www/framework/web/CController.php(1148): CFilter->filter()
+#3 /var/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl()
+#4 /var/www/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /var/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/framework/web/CController.php(265): CController->runActionWithFilters()
+#7 /var/www/framework/web/CWebApplication.php(282): CController->run()
+#8 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/demos/blog/index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/post/update?id=5
+---
